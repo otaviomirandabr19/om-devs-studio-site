@@ -295,6 +295,12 @@ button {
   font-size: 1.08rem;
 }
 
+.proof-line {
+  margin: 1rem 0 0;
+  color: var(--muted-strong);
+  font-size: 0.98rem;
+}
+
 .hero-actions,
 .cta-actions {
   display: flex;
@@ -502,6 +508,7 @@ button {
 }
 
 .section-intro,
+.process-section,
 .team-section,
 .cta-section {
   position: relative;
@@ -564,6 +571,12 @@ button {
   position: relative;
 }
 
+.section-footnote {
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .client-ribbon {
   overflow: hidden;
   margin-bottom: 1.5rem;
@@ -581,6 +594,7 @@ button {
 }
 
 .case-grid,
+.process-grid,
 .team-grid {
   display: grid;
   gap: 1rem;
@@ -588,6 +602,21 @@ button {
 
 .case-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.process-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.process-step {
+  padding: 1.5rem;
+}
+
+.process-step h3 {
+  margin: 0;
+  font-size: 1.55rem;
+  font-family: var(--serif);
+  font-weight: 600;
 }
 
 .case-meta {
@@ -697,6 +726,7 @@ button {
   .hero,
   .services-layout,
   .case-grid,
+  .process-grid,
   .team-grid,
   .company-facts,
   .hero-stats {

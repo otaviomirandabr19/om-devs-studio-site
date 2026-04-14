@@ -2,6 +2,9 @@
 
 Static one-page site built with plain HTML, CSS and JavaScript for easy GitHub Pages deployment.
 
+- Repository: <https://github.com/otaviomirandabr19/om-devs-studio-site>
+- Live site: <https://otaviomirandabr19.github.io/om-devs-studio-site/>
+
 ## Files
 
 - `index.html`
