@@ -1,9 +1,20 @@
+document.documentElement.classList.add('js');
+
 const yearTarget = document.querySelector('#year');
 const revealItems = document.querySelectorAll('.reveal');
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
 }
+
+const updatePointerGlow = (event) => {
+  const x = `${Math.round((event.clientX / window.innerWidth) * 100)}%`;
+  const y = `${Math.round((event.clientY / window.innerHeight) * 100)}%`;
+  document.body.style.setProperty('--pointer-x', x);
+  document.body.style.setProperty('--pointer-y', y);
+};
+
+window.addEventListener('pointermove', updatePointerGlow, { passive: true });
 
 if ('IntersectionObserver' in window && revealItems.length > 0) {
   const observer = new IntersectionObserver(
